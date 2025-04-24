@@ -41,7 +41,17 @@
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Border.GestureRecognizers>
-                <Label Padding="16" HorizontalTextAlignment="Center">Test Button</Label>
+                <Label Padding="16" HorizontalTextAlignment="Center">Test Border that doesn't work with shadow</Label>
+            </Border>
+
+            <Border BackgroundColor="#DDDDDD">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8"/>
+                </Border.StrokeShape>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Border.GestureRecognizers>
+                <Label Padding="16" HorizontalTextAlignment="Center">Test Border that does work without shadow</Label>
             </Border>
         </VerticalStackLayout>
     </ScrollView>
